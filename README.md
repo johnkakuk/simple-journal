@@ -41,6 +41,7 @@ A minimalist, local-first journaling app built with **Node.js**, **Express**, an
 
 ### 4. Generate HTTPS certs
 If you haven’t already installed mkcert:
+
 	brew install mkcert
 	mkcert -install
 	mkdir certs
