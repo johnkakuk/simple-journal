@@ -1,15 +1,26 @@
 {
+  "name": "node-journal",
+  "version": "0.1.0",
   "main": "src/electron/main.js",
   "scripts": {
+    "postinstall": "prisma generate",
     "electron": "electron .",
     "dist": "electron-builder"
+  },
+  "dependencies": {
+    "@prisma/client": "^6.18.0"
+  },
+  "devDependencies": {
+    "prisma": "^6.18.0",
+    "electron": "^31.0.0",
+    "electron-builder": "^24.13.3"
   },
   "build": {
     "appId": "com.johnkakuk.nodejournal",
     "productName": "Node Journal",
     "files": [
       "src/**/*",
-      "prisma/**/*",
+      "node_modules/**/*",
       "package.json"
     ],
     "extraResources": [
