@@ -95,7 +95,11 @@ docForm.addEventListener('submit', e => {
 
 docDate.addEventListener('change', load);
 
-deleteButton.addEventListener('click', deleteEntry);
+deleteButton.addEventListener('click', e => {
+    e.preventDefault();
+    e.stopPropagation();
+    deleteEntry();
+});
 
 document.addEventListener('keydown', e => {
     if ((e.metaKey || e.ctrlKey) && e.key.toLowerCase() === 's') {
