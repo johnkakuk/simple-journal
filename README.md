@@ -79,22 +79,22 @@ Then open:
 
 ## 🧱 Directory Structure
 
-node-journal/
-├── prisma/              # Prisma schema and migrations
-│   └── schema.prisma
-├── public/              # Frontend (HTML, JS, CSS)
-│   ├── index.html
-│   ├── js/
-│   │   └── main.js
-│   └── css/
-│       └── style.css
-├── src/
-│   ├── db.js            # Prisma client instance
-│   └── server.js        # Express app and API routes
-├── certs/               # mkcert local SSL certs
-├── package.json
-├── .env
-└── README.md
+    node-journal/
+    ├── prisma/              # Prisma schema and migrations
+    │   └── schema.prisma
+    ├── public/              # Frontend (HTML, JS, CSS)
+    │   ├── index.html
+    │   ├── js/
+    │   │   └── main.js
+    │   └── css/
+    │       └── style.css
+    ├── src/
+    │   ├── db.js            # Prisma client instance
+    │   └── server.js        # Express app and API routes
+    ├── certs/               # mkcert local SSL certs
+    ├── package.json
+    ├── .env
+    └── README.md
 
 ---- 
 
